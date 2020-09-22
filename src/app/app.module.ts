@@ -5,9 +5,11 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './components/material-module/material-module';
 
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   
     ],
   imports: [
     BrowserModule,

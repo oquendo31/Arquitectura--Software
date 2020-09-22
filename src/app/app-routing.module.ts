@@ -8,13 +8,15 @@ const routes: Routes = [
     loadChildren: () => import('./components/muestras-procesadas-na/muestras-procesadas-na.module').then(m => m.muestrasProcesadasModule)
   },
 
+
   {
     path: 'casos-poistivos-co',
     loadChildren: () => import('./components/casosPositivosCo/casos-positivos-co.module').then(m => m.casosPositivosCoModule)
   },
-
-
+    {path:'casos-poistivos-m',
+  loadChildren:() => import ('./components/casos-positivos-mu/casos-positivos-m.module').then(m=>m.CasosPositivosMModule)},
   { path: '**', redirectTo: '', pathMatch: 'full' }
+
 ];
 
 @NgModule({
