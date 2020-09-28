@@ -4,6 +4,11 @@ import { Routes, RouterModule, PreloadingStrategy, PreloadAllModules } from '@an
 const routes: Routes = [
 
   {
+    path: 'dashboard',
+    loadChildren: () => import('./components/dashboard/dashboard.module').then(m => m.DashboardModule)
+  },
+
+  {
     path: 'muestras-procesadas-na',
     loadChildren: () => import('./components/muestras-procesadas-na/muestras-procesadas-na.module').then(m => m.muestrasProcesadasModule)
   },
@@ -18,7 +23,7 @@ const routes: Routes = [
     path: 'casos-poistivos-m',
     loadChildren: () => import('./components/casos-positivos-mu/casos-positivos-m.module').then(m => m.CasosPositivosMModule)
   },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
 
 ];
 
