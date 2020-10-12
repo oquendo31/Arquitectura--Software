@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { FlexsLayoutModule } from '../flex-layout/flex-layout-module';
 import { AgGridsModule } from '../ag-grid/ag-grid-module';
 
-
 @NgModule({
   declarations: [
     CasosPositivosColComponent
@@ -15,6 +14,7 @@ import { AgGridsModule } from '../ag-grid/ag-grid-module';
     CasosPositivosRoutingModule,
     FlexsLayoutModule,
     AgGridsModule
+    
   ],
 
 })

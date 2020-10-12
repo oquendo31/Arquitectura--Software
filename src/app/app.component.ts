@@ -25,6 +25,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 }
